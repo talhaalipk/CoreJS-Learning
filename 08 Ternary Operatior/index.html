@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math in JavaScript</title>
+    <script src="ternaryOperator.js" defer></script>
+
+    <style>
+        body{
+            font-family: cursive;
+            color: aliceblue;
+            background: black;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Ternary operator</h1>
+    <h3>Syntax:   condition ? valueifTure : valueif false</h3>
+    <br>
+    <p>ternary operator is different from if else and switch as it is a expression  --> return  value which we can store in new variable</p>
+    <br>
+    <p><code>let a = ture ? 'talha' : 'no one' ;</code></p>
+    <p><code>console.log(a) --> Output = talha ;</code></p>
+    <h3>Understanding Nesting</h3>
+    <p><code>let a = testValue == 1 ? 'One' : testValue == 2 ? "Two" : "three" ;</code></p>
+    <br>
+    <p><pre><code>function example() {
+      return condition1 ? value1
+
+      
+        : condition2 ? value2
+        : condition3 ? value3
+        : value4;
+    }</code></pre></p>
+  </body>
+</html>

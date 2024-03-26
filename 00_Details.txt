@@ -1,0 +1,34 @@
+--> 01_ConsoleLog 
+                --> consoleLog.js 
+                                Basics output statemant consoleLog() + operation priority
+
+
+--> 02_Data_Types 
+                --> dataTypes.js 
+                                Understanding primitive dataTypes
+
+
+--> 03_Js_Code_Execute 
+                --> CodeExecutionStory.js 
+                                Understanding how phases of js code CodeExecutionStory
+
+
+--> 04_Dialog_boxies 
+                --> index.html 
+                --> dialogBoxies.js 
+                                Understanding Dialog boxies (alert, comfirm & prompt)
+
+--> 05_String_Funtions 
+                --> index.html 
+                --> stringFunctions.js 
+                                Understanding String Functions
+
+--> 06_Math_Object 
+                --> index.html 
+                --> mathObject.js 
+                                Understanding Math Object
+
+--> 07_Falsy_&_Truthy_Values 
+                --> index.html 
+                --> falsyValues.js 
+                                Understanding Math Object
