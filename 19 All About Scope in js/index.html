@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope in js</title>
+    <script src="scope.js"></script>
+
+    <style>
+      body {
+        font-family: cursive;
+        color: aliceblue;
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+   <h2><pre>
+    Scope in JavaScript
+
+Scope refers to the accessibility (visibility) of variables, functions, and other identifiers within your code. It determines where in your program you can use a particular identifier. Understanding scope is crucial for writing well-structured, maintainable, and bug-free JavaScript code.
+
+Types of Scope in JavaScript:
+
+JavaScript primarily uses function scope and block scope (introduced in ES6). There are also concepts of global scope and lexical scope that are related to function scope.
+
+Function Scope:
+
+Variables declared within a function are only accessible from within that function.
+This is the default scope for variables declared with var, let, and const inside functions.
+Example:
+JavaScript
+function greet(name) {
+    let message = "Hello, " + name + "!"; // `message` is local to `greet`
+    console.log(message);
+}
+
+greet("Alice"); // Output: Hello, Alice!
+
+// console.log(message); // Error: message is not defined
+Use code with caution.
+Block Scope (ES6):
+
+Variables declared with let and const within curly braces {} (blocks) are only accessible from within those blocks.
+This provides more granular control over variable visibility compared to function scope.
+Example:
+JavaScript
+if (true) {
+    let x = 10;
+}
+
+console.log(x); // Error: x is not defined (outside the block)
+Use code with caution.
+Global Scope:
+
+Variables declared outside of any function are considered to have global scope.
+They are accessible from anywhere in your program, which can lead to naming conflicts and unintended side effects. It's generally recommended to avoid using global variables excessively.
+Example:
+JavaScript
+let globalVar = "This is global";
+
+function myFunction() {
+    console.log(globalVar);
+}
+
+myFunction(); // Output: This is global
+Use code with caution.
+Script Scope (Historical):
+
+In older JavaScript environments, variables declared at the top level of a script file had script scope.
+However, with modern browsers using strict mode (which is the default now), script scope is effectively the same as global scope.
+Lexical Scope:
+
+A broader term encompassing function scope and block scope.
+Refers to how code nesting determines variable visibility. Variables are looked up in nested scopes, starting from the current block and moving outward to enclosing functions.
+Example:
+JavaScript
+function outer() {
+    let outerVar = "outer";
+
+    function inner() {
+        let innerVar = "inner";
+        console.log(outerVar); // Can access outerVar because of lexical scope
+        console.log(innerVar);
+    }
+
+    inner();
+}
+
+outer();
+Use code with caution.
+Choosing the Right Scope:
+
+Prefer let and const for variable declarations to take advantage of block scope.
+Use global variables sparingly and only when truly necessary.
+Understanding scope helps you write code that is more predictable and less prone to errors.
+   </pre></h2>
+  </body>
+</html>
